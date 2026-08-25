@@ -1,33 +1,25 @@
-# AI PRD · Juno
+## Diagnostic Diff · Juno RAG Lab
 
-> Module 3 · RAG / AI PRD. The AI product requirements doc with retrieval requirements, built with the **M3 · AI PRD Builder** (RAG design from the **M3 · RAG Architecture Decider**). Paste the tool's markdown over this file.
+_Working notes from Module 3 Lab 1. Do not paste over `03-rag-prd/prd.md`. That file comes from the AI PRD Builder._
 
-## Problem & user
+**Lovable prototype:** https://claude.ai/code/artifact/cce56b66-26c3-4b3c-9b59-13fef6dde1ab?open_in_browser=1&via=user_open&org=fa97a231-1de9-4fbe-8668-b359d58f9e3a
 
-_The user problem and who has it._
+### Before - Quality Mode (no strategy)
 
-_____
+No bulk export for lead lists
+Concurrent edits overwrite saved views
+No "last edited by" indicator
 
-## Solution overview
+### After - Strategy Mode (with RocketShip Strategy One-Pager)
 
-_What Juno does, at a glance._
+Concurrent edits overwrite saved views
+Feature gap tied to top-5 ARR retention risk
+No "last edited by" indicator
 
-_____
+### Takeaway
 
-## Retrieval requirements (RAG)
+> A well-written request and a strategically important one are not the same thing — Juno's job is to stop you from confusing the two.
 
-- **Sources:** _what Juno retrieves from._
-- **Chunking / indexing:** _strategy + why._
-- **Grounding rule:** _e.g. no answer without a cited source._
-- **Freshness:** _how current the data must be._
 
-## Requirements
 
-| # | Requirement | Priority | Acceptance criteria |
-|---|---|---|---|
-| 1 | _…_ | Must | _…_ |
-| 2 | _…_ | Should | _…_ |
 
-## Out of scope
-
-_____
