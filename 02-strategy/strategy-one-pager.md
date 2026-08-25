@@ -1,27 +1,32 @@
-# AI Strategy One-Pager · Juno
+# AI Strategy One-Pager - Juno Automated Prioritization
 
-> Module 2 · Strategy. Built with the **M2 · AI Strategy One-Pager Builder** (informed by the Three-Layer Model Mapper). Paste the tool's markdown over this file.
+## 1. Problem & Workflow
 
-## The bet
+the bad decision it prevents is building a feature that only a vocal minority wants, mistaken for broad demand.
 
-_The one-sentence strategic bet._
+## 2. Target Metrics
 
-_____
+The percentage of shipped roadmap items that are rolled back, deprioritized, or abandoned within 90 days of launch due to adoption or impact falling materially short of the projection made at the greenlight decision.
 
-## Three-layer model
+Formula: (# of features abandoned/rolled back within 90 days of launch ÷ total # of features shipped in the period) × 100
 
-- **Model layer:** _which model(s), and why._
-- **Data / retrieval layer:** _what proprietary data or context creates advantage._
-- **Product layer:** _the experience users actually pay for._
+Target: Reduce from baseline by 50%+ within two quarters of Juno-informed prioritization going live (e.g., 35% → 15–17%).
 
-## Why now
+## 3. Autonomy Level
 
-_Market timing + why this is defensible._
+_(missing)_
 
-_____
+## 4. Data & Model Approach
 
-## Success metric
+Copilot. Juno surfaces the evidence-weighted recommendation, but the PM makes the final call and owns the outcome.
 
-_The single number that says the bet paid off._
+## 5. Risks & Mitigations
 
-_____
+make it into a two sentence
+
+Risk & Guardrail: Juno's aggregation could quietly launder bias as authority — over-weighting the loudest, most-instrumented segment while burying a quiet but high-revenue account's dissent, leading a PM to kill a feature that account depends on and only discovering the churn months later, when it's irreversible. The guardrail: every recommendation must display its evidence composition and revenue-weighted dissent (e.g., "$X ARR disagrees"), and any decision touching an account above a revenue threshold requires mandatory human review of that dissent before the PM can act.
+
+## 6. V1 Scope
+
+No autonomous roadmap changes or ticket creation. Juno doesn't write to Jira/Linear, reprioritize backlogs, or auto-generate specs — it only surfaces the recommendation in-context. Write access is a trust and accountability line V1 hasn't earned yet.
+No cross-team or cross-product-line synthesis. Juno scopes to a single product line's signal in V1 — it won't pull in or weight feedback across other teams' customers/segments. Cross-line aggregation multiplies the bias risk from the guardrail above before there's evidence the weighting model even works on one line.
