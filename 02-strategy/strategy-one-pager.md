@@ -18,7 +18,15 @@ _(missing)_
 
 ## 4. Data & Model Approach
 
-Copilot. Juno surfaces the evidence-weighted recommendation, but the PM makes the final call and owns the outcome.
+Autonomy Level: Copilot
+
+Juno surfaces evidence-weighted recommendations (aggregated signal, forecasted impact, drop-rate risk) at the moment of a prioritization or spec decision — but the PM makes and owns the final call.
+
+Level rejected: Agent
+
+I would not let Juno autonomously reprioritize the roadmap, greenlight features, or trigger launches on its own. Two reasons: first, accountability — if a shipped feature fails, leadership needs a human decision-owner to explain the call, not "the AI decided." An autonomous agent making that decision quietly reintroduces the exact problem Juno exists to prevent — a decision nobody can fully trace or defend, just automated instead of anecdotal. Second, prioritization is inherently political and contextual (stakeholder relationships, timing, competitive pressure) in ways that aren't fully captured in the data Juno ingests; full autonomy would optimize for what's measurable and miss what isn't, producing confidently wrong calls at machine speed.
+
+
 
 ## 5. Risks & Mitigations
 
